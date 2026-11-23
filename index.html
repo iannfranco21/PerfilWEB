@@ -1,136 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PerfilWEB</title>
-
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iann Hernández — Ingeniero de Sistemas · Soporte TI · Desarrollo de Software</title>
+<meta name="description" content="Portafolio de Iann Hernández, Ingeniero de Sistemas: soporte técnico N1/N2, Help Desk, mantenimiento de equipos y desarrollo de software. Bogotá D.C., Colombia.">
+<meta property="og:title" content="Iann Hernández — Ingeniero de Sistemas">
+<meta property="og:description" content="Soporte TI N1/N2 · Help Desk · Desarrollo de Software. Bogotá D.C., Colombia.">
+<meta property="og:image" content="img/1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
-  <nav class="navbar navbar-expand-lg navbar-light">
+
+<nav class="nav" aria-label="Navegación principal">
+  <div class="container nav-inner">
+    <a href="#inicio" class="brand">IH<span class="brand-dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="badge-grad">🎓 Ingeniero de Sistemas — Graduado · TEINCO · Oct. 2026</span>
+      <h1>Iann <span class="grad">Hernández</span></h1>
+      <p class="hero-role">Soporte TI N1/N2 · Help Desk · Desarrollo de Software</p>
+      <p class="hero-tag">Profesional en Ingeniería de Sistemas con experiencia en soporte técnico presencial y remoto, y formación como Tecnólogo en Desarrollo de Software. Combinó atención al usuario y tecnología para resolver problemas en el menor tiempo posible.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:iannfranco.hernandez@gmail.com">📧 Escríbeme</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/iannfranco21" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/iannfranco21" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/1.jpg" alt="Foto de perfil de Iann Hernández">
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="sobre-mi" class="section">
     <div class="container">
-      <a class="navbar-brand" href="#">PerfilWEB</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#perfil">Perfil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experiencia">Experiencia laboral</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#educacion">Educación</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#habilidades">Habilidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#datos">Datos personales</a>
-          </li>
+      <h2 class="section-title">Sobre <span class="grad">mí</span></h2>
+      <div class="about-grid">
+        <p>Profesional en Ingeniería de Sistemas con formación complementaria como Tecnólogo en Desarrollo de Software y experiencia comprobada en soporte técnico presencial y remoto. Especialista en atención a usuarios, mantenimiento preventivo y correctivo de equipos, y diagnóstico de incidencias mediante herramientas como AnyDesk, TeamViewer y Aranda Service Desk.</p>
+        <p>Me destaco por la comunicación clara, la empatía con el usuario y la capacidad de ofrecer soluciones efectivas en el menor tiempo posible, aportando trazabilidad y mejora continua en cada gestión. Actualmente complemento mi perfil de soporte con el desarrollo de aplicaciones web: autor de <strong>el-bunker</strong>, una plataforma de tiendas online construida con Next.js y TypeScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="section">
+    <div class="container">
+      <h2 class="section-title">Experiencia <span class="grad">laboral</span></h2>
+      <div class="timeline">
+        <article class="job">
+          <div class="job-head">
+            <h3>Soporte Técnico Presencial</h3>
+            <span class="job-date">feb. 2025 – jun. 2026</span>
+          </div>
+          <p class="job-org">UAN — Universidad Antonio Nariño · Bogotá D.C.</p>
+          <ul>
+            <li>Atención de soporte técnico en aulas, oficinas y laboratorios a estudiantes, docentes y personal administrativo.</li>
+            <li>Mantenimiento preventivo y correctivo, diagnóstico de fallas y verificación del funcionamiento de equipos tecnológicos.</li>
+            <li>Configuración de hardware y software, instalación y actualización de equipos para el entorno académico.</li>
+            <li>Soporte virtual: diagnóstico remoto, monitoreo de equipos y orientación guiada a distancia.</li>
+            <li>Documentación y registro de incidencias y acciones correctivas, aportando trazabilidad y mejora continua.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <div class="job-head">
+            <h3>Técnico en Reparación de Dispositivos Móviles</h3>
+            <span class="job-date">feb. 2024 – jul. 2024</span>
+          </div>
+          <p class="job-org">WODEN Colombia · Bogotá D.C.</p>
+          <ul>
+            <li>Reparaciones especializadas de dispositivos Samsung y Kalley: diagnóstico técnico y soluciones según protocolos.</li>
+            <li>Gestión de garantías bajo políticas de la compañía, con documentación y trazabilidad completa hasta el cierre.</li>
+            <li>Apoyo en la administración de inventarios de repuestos y control de existencias en sistemas internos.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <div class="job-head">
+            <h3>Soporte Técnico Corporativo</h3>
+            <span class="job-date">jul. 2022 – ene. 2023</span>
+          </div>
+          <p class="job-org">Manpower · Bogotá D.C.</p>
+          <ul>
+            <li>Soporte a usuarios corporativos resolviendo incidencias de software, hardware y sistemas operativos (Windows, macOS y Linux) dentro de los SLA establecidos.</li>
+            <li>Seguimiento y documentación de casos con registro detallado de incidencias y tiempos de respuesta.</li>
+            <li>Uso de herramientas de acceso remoto (AnyDesk, TeamViewer) y soporte de aplicaciones empresariales.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="educacion" class="section">
+    <div class="container">
+      <h2 class="section-title">Educación y <span class="grad">certificaciones</span></h2>
+      <div class="edu-grid">
+        <article class="edu-card edu-highlight">
+          <h3>🎓 Ingeniería de Sistemas</h3>
+          <p class="edu-org">TEINCO · Bogotá D.C.</p>
+          <p class="edu-date">feb. 2022 – <strong>Graduado: 17 de octubre de 2026</strong></p>
+          <p class="edu-note">Formación integral en desarrollo de software, redes, bases de datos, infraestructura TI y gestión de sistemas de información.</p>
+        </article>
+        <article class="edu-card">
+          <h3>Tecnólogo en Desarrollo de Software</h3>
+          <p class="edu-org">Bogotá D.C.</p>
+          <p class="edu-date">feb. 2022 – mar. 2025</p>
+          <p class="edu-note">Desarrollo de software, bases de datos, administración web y seguridad informática.</p>
+        </article>
+        <article class="edu-card">
+          <h3>Técnico Profesional en Programación de Sistemas de Información</h3>
+          <p class="edu-org">Bogotá D.C.</p>
+          <p class="edu-date">feb. 2022 – mar. 2024</p>
+          <p class="edu-note">Creación y gestión de aplicaciones web, diseño de sistemas de información y configuración de redes.</p>
+        </article>
+        <article class="edu-card">
+          <h3>Sistemas de Gestión y Auditoría Interna — ISO 9001</h3>
+          <p class="edu-org">Bogotá D.C.</p>
+          <p class="edu-date">feb. 2022 – jul. 2024</p>
+          <p class="edu-note">Principios de los sistemas de gestión de la calidad y auditorías internas enfocadas en mejora continua.</p>
+        </article>
+      </div>
+      <div class="certs">
+        <h3 class="certs-title">Certificaciones</h3>
+        <ul class="cert-list">
+          <li>🔒 Securing Your Email — Advanced · <em>ManpowerGroup powerYOU · ago. 2022</em></li>
+          <li>🛡️ Avoiding Dangerous Links — Colombia · <em>ManpowerGroup powerYOU · ago. 2022</em></li>
+          <li>🧘 Ergonomía · <em>ManpowerGroup powerYOU · ago. 2022</em></li>
+          <li>🌐 Introducción al Desarrollo Web 1 · <em>Google Activate · ago. 2020</em></li>
         </ul>
       </div>
     </div>
-  </nav>
+  </section>
 
-  
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="section" id="perfil">
-          <h2>Mi Perfil</h2>
-          <p>Soy un estudiante de cuarto semestre de Ingeniería de Sistemas con una pasión innata por la resolución de problemas y la tecnología. Durante mis primeros años de estudio, he tenido la oportunidad de adquirir experiencia práctica que ha enriquecido mi comprensión de los sistemas informáticos y el soporte técnico.</p>
+  <section id="habilidades" class="section">
+    <div class="container">
+      <h2 class="section-title">Habilidades <span class="grad">técnicas</span></h2>
+      <div class="skills-cols">
+        <div>
+          <h3 class="skills-sub">Soporte TI</h3>
+          <div class="chips">
+            <span class="chip">Soporte Técnico N1/N2</span>
+            <span class="chip">Help Desk / Mesa de Ayuda</span>
+            <span class="chip">Mantenimiento Preventivo</span>
+            <span class="chip">Mantenimiento Correctivo</span>
+            <span class="chip">AnyDesk · TeamViewer</span>
+            <span class="chip">Aranda Service Desk</span>
+            <span class="chip">Windows · macOS · Linux</span>
+            <span class="chip">Microsoft Office 365</span>
+            <span class="chip">Hardware de Equipo</span>
+            <span class="chip">Reparación de Móviles</span>
+            <span class="chip">Gestión de Garantías</span>
+            <span class="chip">Control de Inventarios</span>
+            <span class="chip">ISO 9001</span>
+            <span class="chip">Documentación de Incidencias</span>
+            <span class="chip">Atención al Usuario</span>
+            <span class="chip">Diagnóstico Remoto</span>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="section">
-          <img src="img/1.jpg" alt="Tu imagen de perfil" class="img-fluid profile-image">
-        </div>
-        <div class="fixed-social-media">
-          <a href="https://www.facebook.com/iannhernandez78" target="_blank" class="social-media-button"><i class="fab fa-facebook"></i> Facebook</a>
-          <a href="https://www.instagram.com/iannfranco21/" target="_blank" class="social-media-button"><i class="fab fa-instagram"></i> Instagram</a>
-          <a href="https://www.linkedin.com/in/iann-franco-h-281662229/" target="_blank" class="social-media-button"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <div>
+          <h3 class="skills-sub">Desarrollo de Software</h3>
+          <div class="chips">
+            <span class="chip chip-dev">TypeScript</span>
+            <span class="chip chip-dev">JavaScript</span>
+            <span class="chip chip-dev">HTML5</span>
+            <span class="chip chip-dev">CSS3</span>
+            <span class="chip chip-dev">Next.js</span>
+            <span class="chip chip-dev">React</span>
+            <span class="chip chip-dev">Prisma ORM</span>
+            <span class="chip chip-dev">PostgreSQL</span>
+            <span class="chip chip-dev">Tailwind CSS</span>
+            <span class="chip chip-dev">Git · GitHub</span>
+            <span class="chip chip-dev">Diseño de Sistemas</span>
+            <span class="chip chip-dev">Redes</span>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="row mt-5">
-      <div class="col-md-8">
-        <div class="section" id="experiencia">
-          <h2>Experiencia Laboral</h2>
-          <p>Manpower: Durante seis meses de prácticas, operando en una mesa de ayuda nivel 1, fui el primer punto de contacto para los usuarios. Destacé al resolver una diversidad de problemas técnicos, desde consultas básicas hasta desafíos complejos. Mantuve un enfoque paciente y amigable para garantizar la satisfacción del cliente, respondiendo efectivamente.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="section">
-          <img src="img/2.jpg" alt="Imagen de experiencia laboral" class="img-fluid">
-        </div>
+  <section id="proyectos" class="section">
+    <div class="container">
+      <h2 class="section-title">Proyectos <span class="grad">destacados</span></h2>
+      <div class="projects-grid">
+        <a class="project-card" href="https://github.com/iannfranco21/el-bunker" target="_blank" rel="noopener">
+          <div class="project-icon">🏰</div>
+          <h3>el-bunker</h3>
+          <p>Plataforma de tiendas online multi-tienda: catálogo de productos, pedidos vía WhatsApp, panel de administración con métricas y planes de suscripción.</p>
+          <span class="project-tags">Next.js · TypeScript · Prisma · PostgreSQL · Tailwind CSS</span>
+        </a>
+        <a class="project-card" href="https://github.com/iannfranco21" target="_blank" rel="noopener">
+          <div class="project-icon">🐙</div>
+          <h3>Perfil de GitHub</h3>
+          <p>Mi perfil profesional en GitHub: repositorios, proyectos de desarrollo y contribuciones.</p>
+          <span class="project-tags">GitHub · Portafolio técnico</span>
+        </a>
+        <a class="project-card" href="https://www.linkedin.com/in/iannfranco21" target="_blank" rel="noopener">
+          <div class="project-icon">💼</div>
+          <h3>Perfil de LinkedIn</h3>
+          <p>Trayectoria profesional completa, formación y red de contactos.</p>
+          <span class="project-tags">LinkedIn · Red profesional</span>
+        </a>
       </div>
     </div>
+  </section>
 
-    <div class="row mt-5">
-      <div class="col-md-4">
-        <div class="section">
-          <img src="img/3.jpg" alt="Imagen de educación" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div class="section" id="educacion">
-          <h2>Educación</h2>
-          <p>Actualmente, continúo mis estudios para obtener el título de Ingeniero de Sistemas en modalidad nocturna, de 6 pm a 10 pm (presencial). Mi dedicación a la mejora constante en habilidades técnicas ha impulsado mi éxito en entornos de sistemas.</p>
-        </div>
+  <section id="contacto" class="section contact">
+    <div class="container contact-box">
+      <h2 class="section-title">¿Hablamos<span class="grad">?</span></h2>
+      <p>Estoy abierto a oportunidades en soporte TI, mesa de ayuda y desarrollo de software.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:iannfranco.hernandez@gmail.com">📧 iannfranco.hernandez@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/iannfranco21" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
+  </section>
 
-    <div class="row mt-5">
-      <div class="col-md-12 text-center">
-        <div class="section" id="habilidades">
-          <h2>Habilidades</h2>
-          <ul class="list-group">
-            <li class="list-group-item">Soporte remoto y asistencia técnica</li>
-            <li class="list-group-item">Mantenimiento</li>
-            <li class="list-group-item">Software</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+</main>
 
-    <div class="row mt-5">
-      <div class="col-md-4">
-        <div class="section">
-          <img src="img/4.jpg" alt="Imagen de datos personales" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div class="section" id="datos">
-          <h2>Datos Personales</h2>
-          <ul>
-            <li>Nombre: Iann Franco Hernandez Rojas</li>
-            <li>Fecha de Nacimiento: 05/08/2003</li>
-            <li>Telefono: 3024899140 </li>
-          </ul>
-        </div>
-      </div>
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year">2026</span> Iann Franco Hernandez Rojas · Ingeniero de Sistemas · Bogotá D.C., Colombia</p>
+    <div class="footer-links">
+      <a href="https://github.com/iannfranco21" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/iannfranco21" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:iannfranco.hernandez@gmail.com">Email</a>
     </div>
   </div>
+</footer>
 
-  
-  <div class="footer">
-    Iann Franco Hernandez Rojas © Todos los derechos reservados 2023 
-  </div>
-
- 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  const t = document.getElementById('navToggle');
+  const l = document.getElementById('navLinks');
+  t.addEventListener('click', () => l.classList.toggle('open'));
+  l.addEventListener('click', e => { if (e.target.tagName === 'A') l.classList.remove('open'); });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
